@@ -9,7 +9,7 @@ const decodeGeometry = (resultApi) =>
 }
 
 
-const tranformToOtherCoor = async (lon, lat, fromSrc = '4326', toSrc ='32618') =>
+const tranformToOtherCoor = async (lat, lon, fromSrc = '4326', toSrc ='32618') =>
 {
     const url = `https://epsg.io/srs/transform/${lon},${lat}.json?key=default&s_srs=${fromSrc}&t_srs=${toSrc}`
     const result = await getApi(url)
