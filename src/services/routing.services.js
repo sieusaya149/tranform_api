@@ -19,7 +19,7 @@ class RoutingTranformService
             const temp = await tranformToOtherCoor(element[0],element[1])
             locations.push(temp)
         }
-        return {locations}
+        return [locations]
     }
 }
 

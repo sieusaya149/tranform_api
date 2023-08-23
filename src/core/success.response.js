@@ -14,7 +14,7 @@ class SuccessResponse {
             message,
             statusCode = StatusCode.OK, 
             reasonCode = ReasonCode.OK,
-            metaData = {}
+            metaData = []
         }
     )
     {
