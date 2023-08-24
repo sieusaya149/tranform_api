@@ -16,8 +16,8 @@ class RoutingTranformService
         let locations = []
         for (let element of decodePolyline)
         {
-            const temp = await tranformToOtherCoor(element[0],element[1])
-            locations.push(temp)
+            const location = await tranformToOtherCoor(element[0],element[1])
+            locations.push(location)
         }
         return locations
     }
